@@ -97,11 +97,25 @@
 </header> 
 <main>
 <section class="wrapped">
-    <form class="form">
+    <form method="POST" action="/login" class="form">
+        @csrf
+
         <p class="heading mt-2"><span>Authentification</span></p>
-        <input class="input" placeholder="Nom D'Utilisateur" type="text">
-        <input class="input" placeholder="Mot de Pass" type="text"> 
-        <button class="btn">Connexion</button>
+        
+        <input id="email" name="email" class="input" placeholder="Adresse-Email" type="email">
+            @error('email')
+                <span class="invalid-feedback is-invalid" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+             @enderror
+        <input id="password" name="password" class="input" placeholder="Mot de Pass" type="password"> 
+            @error('password')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+             @enderror
+
+        <button name="login" id="login" type="submit" value="login" class="btn">Connexion</button>
     </form>
 </section>
 </main>
