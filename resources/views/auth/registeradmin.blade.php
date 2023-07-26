@@ -1,5 +1,5 @@
  @extends('layouts.base')
-@include('partials.sidebar')
+@include('partials.sidebarauth')
 @section('content')
 <header class="header fixed-top clearfix">
     <a href="/assets/index.html" class="logo">
@@ -22,7 +22,7 @@
             width: 400px; 
             height: 450px; 
             position: fixed;
-            top: 10%;
+            top: 12%;
             left: 43%;
 }
     </style>

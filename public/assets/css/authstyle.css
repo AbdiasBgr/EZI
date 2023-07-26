@@ -1,4 +1,10 @@
 /* Side Barre latérale */
+.navbar{
+  background:linear-gradient(to left,  #837f7f, #007bff);
+}
+.navbar a{
+   color: #eee;
+}
 #side_nav{
   background: linear-gradient(to top,  #837f7f, #007bff);
   color: #000000;
