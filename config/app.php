@@ -2,9 +2,11 @@
 
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\ServiceProvider;
+use App\Providers\Filament\AdminPanelProvider;
 // Dans la documentation, la classe "App\Providers\FortifyServiceProvider" doit être définie. 
 App\Providers\FortifyServiceProvider::class;
 return [
+    AdminPanelProvider::class,
 
     /*
     |--------------------------------------------------------------------------
@@ -169,6 +171,7 @@ return [
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
+        App\Providers\Filament\AdminPanelProvider::class,
         App\Providers\RouteServiceProvider::class,
     ])->toArray(),
 

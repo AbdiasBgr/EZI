@@ -2,9 +2,9 @@
 @include('partials.sidebarauth')
 @section('content')
 <header class="header fixed-top clearfix">
-    <a href="/assets/index.html" class="logo">
+    <!-- <a href="/assets/index.html" class="logo">
      <img src="/assets/images/studentcard.png" alt="logosidebar">
-    </a> 
+    </a>  -->
     <style>
         body{
             background: linear-gradient(to right,  #feeeee, #3043f0);
@@ -16,7 +16,7 @@
     <form method="POST" action="/login" class="form">
         @csrf
 
-        <p class="heading mt-2"><span>Authentification</span></p>
+        <p class="heading mt-2"><span>Connexion</span></p>
         
         <input id="email" name="email" class="input" placeholder="Adresse-Email" type="email">
             @error('email')
@@ -31,7 +31,7 @@
                 </span>
              @enderror
 
-        <button name="login" id="login" type="submit" value="login" class="btn">Connexion</button>
+        <button name="login" id="login" type="submit" value="login" class="btn">Vérifiez sa demande</button>
     </form>
 </section>
 </main>

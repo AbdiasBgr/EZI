@@ -2,9 +2,9 @@
 @include('partials.sidebarauth')
 @section('content')
 <header class="header fixed-top clearfix">
-    <a href="/assets/index.html" class="logo">
+    <!-- <a href="/assets/index.html" class="logo">
      <img src="/assets/images/studentcard.png" alt="logosidebar">
-    </a> 
+    </a>  -->
     <style>
         body{
             background: linear-gradient(to right,  #feeeee, #3043f0);
@@ -31,7 +31,7 @@
 <section class="wrapped">
     <form  method="POST" action="/register" class="form" >
     @csrf
-        <p class="heading mt-2"><span>Inscription</span></p>
+        <p class="heading mt-2"><span>Demande d'Access</span></p>
         <input id="name" class="input" placeholder="Nom d'Utilisateur" type="text" class="form-control @error('name') is-invalid @enderror" name="name" required autocomplete="current-name">
             @error('name')
                 <span class="invalid-feedback" role="alert">
@@ -55,7 +55,7 @@
 
         <input id="password_confirmation" class="input" placeholder="Confirmer Mot de Pass" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password"> 
            
-        <button class="btn" name="registeradmin" id="registeradmin" type="submit" value="registeradmin">Enregistrer</button>
+        <button class="btn" name="registeradmin" id="registeradmin" type="submit" value="registeradmin">Soumettre</button>
     </form>
 </section>
 </main>

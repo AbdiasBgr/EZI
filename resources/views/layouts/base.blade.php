@@ -6,7 +6,7 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 	<link rel="stylesheet" href="/assets/css/authstyle.css">
-	<title>StudentCard+</title>
+	<title>Fabrique</title>
 </head>
 <body>
     @yield('content')
