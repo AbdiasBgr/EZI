@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/home', function () {
+Route::get('/', function () {
     return view('home');
 })->middleware(middleware:'auth');
 
@@ -24,9 +24,7 @@ Route::get('/login', function () {
     return view('auth/login');
 });
 
-Route::get('/', function () {
-    return view('auth/registeradmin');
-});
+
 
 
 Route::get('/register', function () {
